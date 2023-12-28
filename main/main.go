@@ -88,8 +88,23 @@ func main() {
 	}
 	*/
 
-	fmt.Print("Hello World")
+	/*
 
+	// FOR
+
+	for i := 0; i < 10; i++ {
+		i++
+		fmt.Println(i)
+	}
+ 
+	// WHILE
+
+	var a int = 0
+	for a < 10 {
+		a++
+		fmt.Print("Hola ")
+	}
+	*/
 	
 	 
 
