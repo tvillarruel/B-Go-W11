@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+/*
 const (
 	Addition = "+"
 	Substraction = "-"
@@ -24,6 +25,7 @@ func calculate(a,b float64, operation string) float64 {
 	}
 	return 0
 }
+*/
 
 func main() {
 
@@ -163,10 +165,11 @@ func main() {
 
 	 */
 	
-	
+	/*
 	fmt.Println("Suma: ", calculate(6,2,Addition))
 	fmt.Println("Resta: ", calculate(6,2,Substraction))
 	fmt.Println("Multiplicacion: ", calculate(6,2,Multiplication))
 	fmt.Println("Division: ", calculate(6,2,Division))
-	
+	*/
+	fmt.Print("")
 }
