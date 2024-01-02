@@ -2,6 +2,29 @@ package main
 
 import "fmt"
 
+const (
+	Addition = "+"
+	Substraction = "-"
+	Multiplication = "*"
+	Division = "/"
+)
+
+func calculate(a,b float64, operation string) float64 {
+	switch operation {
+	case Addition:
+		 return a + b
+	case Substraction:
+		return a - b
+	case Multiplication:
+		return a * b
+	case Division:
+		if b != 0 {
+			return a / b
+		}
+	}
+	return 0
+}
+
 func main() {
 
 	//-------------------------
@@ -106,7 +129,44 @@ func main() {
 	}
 	*/
 	
-	 
+	/*
+
+	// ARRAYS
+	 var numbers [3]int
+	 fruits := [3]string{"manzana","pera","uva"}
+	 fmt.Println("Numeros: ", numbers)
+	 fmt.Println("Frutas: ", fruits)
+
+	 // SLICES VALOR POR DEFAULT ES UN PUNTERO HACIA UN ARRAY, (nil) 
+	 // TRABAJA CON MEMORIA A MEDIDA QUE AVANZA EL PROGRAMA
+	 names := make([]string,3)
+	 names[0] = "Thiago"
+	 names[1] = "Lucas"
+	 names[2] = "Marcos"
+	 fmt.Println("Names: ", names)
+
+	 names = append(names, "Jose", "Jorge")
+	 fmt.Println("Names: ", names)
+
+	 // MAP
+	 // MAKE() para array no sirve, el make permite en slices y map 
+	 // inicializarlos y poder especificar longitud y capacidad
+	 // (capacidad es opcional especificar, si no se especifica
+	 // va a ser igual a la longitud)
+	 ages := make(map[string]uint)
+	 ages["Thiago"] = 22
+	 age := ages["Thiago"]
+	 fmt.Println(age)
 
 
+	 // RANGE es como un foreach, va iterando ¿segun el tipo?
+
+	 */
+	
+	
+	fmt.Println("Suma: ", calculate(6,2,Addition))
+	fmt.Println("Resta: ", calculate(6,2,Substraction))
+	fmt.Println("Multiplicacion: ", calculate(6,2,Multiplication))
+	fmt.Println("Division: ", calculate(6,2,Division))
+	
 }
