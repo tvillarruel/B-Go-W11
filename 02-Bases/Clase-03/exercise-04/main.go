@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func calcType(calcType string) (func (...int) float64, string) {
+func calcType(calcType string) (func(...int) float64, string) {
 	switch calcType {
 	case "minimum":
 		return calcMin, "Selected minimum calculation"
@@ -45,21 +45,21 @@ func calcAvg(grades ...int) float64 {
 	return float64(sum) / float64(len(grades))
 }
 
-func main(){
+func main() {
 
-	grades := []int{90,86,44,34,-23,77,9,2,1,-18,0}
+	grades := []int{90, 86, 44, 34, -23, 77, 9, 2, 1, -18, 0}
 
 	const (
-   		minimum = "minimum"
-   		average = "average"
-   		maximum = "maximum"
+		minimum = "minimum"
+		average = "average"
+		maximum = "maximum"
 	)
 
 	calcFunc, msg := calcType(minimum)
 
-	if calcFunc !=nil {
+	if calcFunc != nil {
 		result := calcFunc(grades...)
-	fmt.Printf("%s: %.2f\n", msg, result)
+		fmt.Printf("%s: %.2f\n", msg, result)
 	} else {
 		fmt.Println(msg)
 	}

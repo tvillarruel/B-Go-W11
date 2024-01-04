@@ -19,7 +19,7 @@ type Medium struct {
 }
 
 func (mp *Medium) Price() float64 {
-	return mp.PriceValue *1.03
+	return mp.PriceValue * 1.03
 }
 
 type Large struct {
@@ -44,7 +44,7 @@ func factory(productType string, price float64) Product {
 }
 
 func main() {
-	
+
 	product1 := factory("Small", 999.99)
 	product2 := factory("Medium", 999.99)
 	product3 := factory("Large", 999.99)

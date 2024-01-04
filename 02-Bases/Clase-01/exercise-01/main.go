@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	var (
 		firstName string = "Thiago"
-		address string = "Zárate, Pcia. Buenos Aires"
+		address   string = "Zárate, Pcia. Buenos Aires"
 	)
 
 	fmt.Println("First name: ", firstName, "\nAddress:", address)

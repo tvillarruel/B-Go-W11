@@ -1,13 +1,12 @@
 package main_test
 
 import (
-	"testing"
 	"github.com/tvillarruel/GoTest/02-Bases/Clase-04/exercise-02/calculator"
+	"testing"
 )
 
-func TestAveragesCalculator(t *testing.T){
+func TestAveragesCalculator(t *testing.T) {
 	//arrange
-
 
 	//act
 	grades := []float64{10.0, 10.0, 1.0}

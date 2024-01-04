@@ -3,20 +3,20 @@ package main
 import "fmt"
 
 func averagesCalculator(grades ...float64) float64 {
-	
+
 	var (
-		avg float64
+		avg   float64
 		total float64
 	)
-	
-	for i:= 0; i < len(grades); i++{
+
+	for i := 0; i < len(grades); i++ {
 		total += grades[i]
 	}
 	avg = total / float64(len(grades))
 	return avg
 }
 
-func main(){
+func main() {
 
 	notes := make([]float64, 0)
 

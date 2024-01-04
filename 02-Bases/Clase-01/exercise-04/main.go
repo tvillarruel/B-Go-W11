@@ -2,17 +2,15 @@ package main
 
 import "fmt"
 
-func main(){
-	
+func main() {
+
 	var (
-	
 		lastName string = "Smith"
 		//var age int = "35"
 		age int = 35
 		//var salary string = 45857.90
-		salary float64 = 45857.90
-		firstName string = "Mary"
-
+		salary    float64 = 45857.90
+		firstName string  = "Mary"
 	)
 
 	// boolean := "false"

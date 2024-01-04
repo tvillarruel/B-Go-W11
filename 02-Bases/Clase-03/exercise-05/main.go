@@ -12,7 +12,7 @@ func animal(animalType string) (func(int) float64, string) {
 		return animalHamster, "Hamster selected"
 	case "tarantula":
 		return animalTarantula, "Tarantula selected"
-	default: 
+	default:
 		return nil, "Wrong animal selected"
 	}
 
@@ -38,22 +38,22 @@ func animalTarantula(numTarantula int) float64 {
 	return float64(numTarantula) * float64(food)
 }
 
-func main(){
-	
+func main() {
+
 	const (
-   		dog    = "dog"
-   		cat    = "cat"
-		hamster = "hamster"
+		dog       = "dog"
+		cat       = "cat"
+		hamster   = "hamster"
 		tarantula = "tarantula"
 	)
-	
+
 	typeAnimalFunc, msg := animal(cat)
-	
+
 	if typeAnimalFunc != nil {
 		result := typeAnimalFunc(10)
 		fmt.Printf("%s, %.2f Kg of food\n", msg, result)
 	} else {
 		fmt.Println(msg)
 	}
-	
+
 }

@@ -5,7 +5,7 @@ import (
 	"github.com/tvillarruel/GoTest/02-Bases/Clase-04/exercise-02/calculator"
 )
 
-func main(){
+func main() {
 
 	notes := make([]float64, 0)
 

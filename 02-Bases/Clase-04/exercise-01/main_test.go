@@ -1,8 +1,8 @@
 package main_test
 
 import (
-	"testing"
 	"github.com/tvillarruel/GoTest/02-Bases/Clase-04/exercise-01/calculator"
+	"testing"
 	//"github.com/stretchr/testify/require"
 )
 
@@ -15,7 +15,7 @@ func TestSalaryTaxCalculator_LessThan50k(t *testing.T) {
 	result := calculator.SalaryTaxCalculator(salary)
 
 	//assert
-	if result != expected{
+	if result != expected {
 		t.Errorf("Expected %f, got %f ", expected, result)
 	}
 
@@ -28,7 +28,7 @@ func TestSalaryTaxCalculator_GreaterThan50kLessThan150k(t *testing.T) {
 	salary := 149999.0
 	expected := 25499.83
 	result := calculator.SalaryTaxCalculator(salary)
-	
+
 	//assert
 	if result != expected {
 		t.Errorf("Expected %f, got %f", expected, result)

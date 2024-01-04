@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	var (
 		// 1firsName string
 		firstName string
-		lastName string
+		lastName  string
 		// int age
 		age int
 		//driver_license = true

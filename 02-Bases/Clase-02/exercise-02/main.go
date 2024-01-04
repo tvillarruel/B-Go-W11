@@ -2,14 +2,13 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	var (
-		age int
-		active bool
+		age       int
+		active    bool
 		seniority int
-		salary float64
-
+		salary    float64
 	)
 
 	fmt.Println("Complete the data in order with a space beetwen answers: \n 1) Age: \n 2) Are you active? (true or false): \n 3) Seniority (in years): \n 4) Salary: ")

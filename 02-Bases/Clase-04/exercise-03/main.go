@@ -5,11 +5,11 @@ import (
 	"github.com/tvillarruel/GoTest/02-Bases/Clase-04/exercise-03/calculator"
 )
 
-func main(){
+func main() {
 
 	var (
 		minPerMonth float64
-		category string
+		category    string
 	)
 
 	fmt.Print("Enter your category (A, B or C): ")

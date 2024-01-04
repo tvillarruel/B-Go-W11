@@ -2,17 +2,16 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
-	
 	var employees = map[string]int{"Benjamin": 20, "Nahuel": 26, "Brenda": 19, "Darío": 44, "Pedro": 30}
 
 	fmt.Println("Benjamin's age: ", employees["Benjamin"])
 	fmt.Println("Adding Federico...")
 	employees["Federico"] = 25
 
-	i:=0
-	for _, age := range employees{
+	i := 0
+	for _, age := range employees {
 		if age > 21 {
 			i++
 		}
